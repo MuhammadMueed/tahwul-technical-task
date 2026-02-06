@@ -1,4 +1,5 @@
 import { Box, Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import { progressStatusData, STATUS_COLORS } from '../../data/mock-dashboard';
 import BoxContainer from '../BoxContainer';
 
@@ -73,13 +74,13 @@ function StatusDot({ item }) {
 }
 
 function SectionCard({ title, items, isExpand }) {
+  const navigate = useNavigate();
+
   return (
     <Box
       gridArea={title}
       display={'grid'}
       flex={1}
-      //   minHeight={110}
-      // flex={isExpand ? 1 : 0}
       gap={1}
       sx={{
         border: '1px solid',
@@ -87,6 +88,9 @@ function SectionCard({ title, items, isExpand }) {
         borderRadius: 0.63,
         p: 1,
         bgcolor: 'background.paper',
+      }}
+      onClick={() => {
+        navigate('/perspective-details');
       }}
     >
       <Typography fontSize={10} fontWeight={400} textAlign="center" color="primary.main">

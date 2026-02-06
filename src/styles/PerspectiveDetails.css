@@ -1,0 +1,10 @@
+.perspective-details-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 24px;
+  grid-template-areas:
+    'perspective-info'
+    'perspective-stats'
+    'tabs';
+}

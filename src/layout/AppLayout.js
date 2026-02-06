@@ -1,15 +1,16 @@
 import { Box } from '@mui/material';
+import { Outlet } from 'react-router-dom';
 import Header from './Header';
 import Sidebar from './Sidebar';
 
-function AppLayout({ children }) {
+function AppLayout() {
   return (
     <Box sx={{ display: 'flex', minHeight: '100vh' }}>
       <Sidebar />
       <Box display="flex" flexDirection={'column'} flex={1}>
         <Header />
         <Box flex={1} p={3} bgcolor={'background.paper'}>
-          {children}
+          <Outlet />
         </Box>
       </Box>
     </Box>

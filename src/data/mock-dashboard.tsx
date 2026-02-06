@@ -1,9 +1,13 @@
 import {
+  Autorenew,
+  CheckCircle,
   CheckCircleOutlineOutlined,
   CloudUploadOutlined,
   DescriptionOutlined,
   FolderOutlined,
+  HourglassEmpty,
   InsertChartOutlined,
+  ListAlt,
   TaskAltOutlined,
 } from '@mui/icons-material';
 
@@ -397,5 +401,45 @@ export const activitiesData = [
     type: 'criterion',
     title: 'New Criterion "5.3 Digital Identity" Was Created By Admin',
     time: '1 Hour Ago',
+  },
+];
+
+export const perspectiveStatsData = [
+  {
+    id: 1,
+    count: 4,
+    title: 'Total Evidence',
+    icon: <ListAlt />,
+  },
+  {
+    id: 2,
+    count: 3,
+    title: 'Under Review Evidence',
+    icon: <HourglassEmpty sx={{ fontSize: '24px' }} />,
+  },
+  {
+    id: 3,
+    count: 2,
+    title: 'In Progress Evidence',
+    icon: <Autorenew sx={{ fontSize: '24px' }} />,
+  },
+  {
+    id: 4,
+    count: 1,
+    title: 'Completed Evidence',
+    icon: <CheckCircle sx={{ fontSize: '24px' }} />,
+  },
+];
+
+export const leadersData = [
+  {
+    id: 1,
+    name: 'Ahmed AI-Ali',
+    perspective: 'Strategy Perspective',
+  },
+  {
+    id: 2,
+    name: 'Ahmed AI-Ali',
+    perspective: 'Strategy Perspective',
   },
 ];
