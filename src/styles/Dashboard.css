@@ -1,0 +1,12 @@
+.dashboard-container {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto 285px 322px;
+  grid-template-areas:
+    'project-timeline project-timeline project-timeline'
+    'project-statistics project-statistics project-statistics'
+    'progress-status progress-status progress-status'
+    'overall-compliance top-performing-leaders recent-activities'
+    'year-performance year-performance audit-readiness';
+}

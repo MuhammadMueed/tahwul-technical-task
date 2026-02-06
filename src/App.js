@@ -1,0 +1,9 @@
+import './App.css';
+import AppLayout from './layout/AppLayout';
+import Dashboard from './pages/Dashboard';
+
+function App() {
+  return <AppLayout children={<Dashboard />}></AppLayout>;
+}
+
+export default App;
