@@ -39,8 +39,51 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## How the Code Was Built
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### The project follows a component-based architecture using React.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+• Each screen from the Figma design is implemented as a separate page or main component.
+• Reusable UI elements (cards, tables, charts, headers) are abstracted into components.
+• Material UI Grid and Box components are used to replicate spacing, alignment, and responsiveness from the Figma design.
+• Chart.js is integrated to render graphs such as bar charts, line charts, and pie/donut charts.
+• Static/mock data is used to populate charts and tables to focus on UI/UX implementation accuracy.
+• Styling is primarily handled through MUI’s styling system to maintain consistency and theme control.
+
+## Assumptions Made
+
+• The project is UI-focused, so no backend APIs are connected.
+• All data shown in charts and tables is mock/static data, assuming real data would be provided via APIs in a production environment.
+• Authentication, authorization, and role-based access are out of scope.
+• The dashboard is optimized primarily for desktop and tablet views, as per the Figma design.
+• Business logic and calculations are minimal, assuming they would be handled server-side in a real system.
+
+## Improvements With More Time
+
+### API Integration
+
+• Connect the dashboard to real backend APIs.
+• Implement loading states and error handling.
+
+### State Management
+
+• Introduce a global state manager (Redux Toolkit / Zustand) for better scalability.
+
+### Performance Optimization
+
+• Memoization of heavy components.
+• Lazy loading for charts and large sections.
+
+### Responsiveness Enhancements
+
+• Improve mobile responsiveness for smaller screens.
+• Add adaptive layouts for different breakpoints.
+
+### Theming & Customization
+
+• Implement MUI theme customization (dark/light mode).
+• Centralized color and typography management.
+
+### Testing
+
+• Add unit tests and component tests using Jest and React Testing Library.
