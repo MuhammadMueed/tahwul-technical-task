@@ -18,19 +18,21 @@ export default function Header() {
           ml: 5,
           border: '1px solid',
           borderColor: 'divider',
-          borderRadius: 0.8,
+          borderRadius: 0.63,
           width: 320,
-          height: 42,
+          height: 40,
         }}
       />
       <Box flex={1} />
-
       <IconButton>
         <Badge variant="dot" color="error" overlap="circular">
-          <NotificationsOutlined />
+          <NotificationsOutlined
+            sx={{
+              color: 'text.secondary',
+            }}
+          />
         </Badge>
       </IconButton>
-
       <Box
         sx={{
           display: 'flex',
@@ -40,7 +42,7 @@ export default function Header() {
           px: 0.7,
           py: 0.7,
           borderRadius: 2,
-          bgcolor: '#F8FAFA',
+          bgcolor: '#F9FAFA',
         }}
       >
         <Avatar src="/avatar.jpg" sx={{ width: 24, height: 24 }} />

@@ -39,12 +39,18 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## How to use it
+
+• The landing page is Dashboard Screen.
+• To view perspective details, click any perspective like Digital Transformation, Digital Culture and Environment etc.
+• In details screen, you can navigate back to Dashboard or you view more details under Overview and Evidence tabs.
+
 ## How the Code Was Built
 
 ### The project follows a component-based architecture using React.
 
 • Each screen from the Figma design is implemented as a separate page or main component.
-• Reusable UI elements (cards, tables, charts, headers) are abstracted into components.
+• Reusable UI elements (cards, tables, charts, headers) are abstracted into shared components.
 • Material UI Grid and Box components are used to replicate spacing, alignment, and responsiveness from the Figma design.
 • Chart.js is integrated to render graphs such as bar charts, line charts, and pie/donut charts.
 • Static/mock data is used to populate charts and tables to focus on UI/UX implementation accuracy.

@@ -1,5 +1,5 @@
 import { Box, Divider, Typography } from '@mui/material';
-import BoxContainer from '../BoxContainer';
+import BoxContainer from '../shared/BoxContainer';
 
 export default function OverviewTabCategories() {
   const categories = [

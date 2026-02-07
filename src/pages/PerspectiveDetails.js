@@ -1,8 +1,8 @@
 import { Box } from '@mui/material';
-import BackActionButton from '../components/BackActionButton';
 import DetailTabs from '../components/perspectiveDetails/DetailTabs';
 import PerspectiveInfo from '../components/perspectiveDetails/PerspectiveInfo';
 import PerspectiveStats from '../components/perspectiveDetails/PerspectiveStats';
+import BackActionButton from '../components/shared/BackActionButton';
 import '../styles/PerspectiveDetails.css';
 
 export default function PerspectiveDetails() {

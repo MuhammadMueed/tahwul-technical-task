@@ -27,20 +27,24 @@ export default function Sidebar() {
         </Box>
 
         <List sx={{ p: 2, pt: 3 }}>
-          {items.map((item, i) => (
-            <ListItemButton
-              key={item.text}
-              sx={{
-                borderRadius: 0.8,
-                mb: 1,
-                bgcolor: i === 0 ? 'rgba(255,255,255,0.1)' : 'transparent',
-                color: i === 0 ? '#fff' : '#7B9FC3',
-              }}
-            >
-              <ListItemIcon sx={{ color: i === 0 ? '#fff' : '#7B9FC3' }}>{item.icon}</ListItemIcon>
-              <ListItemText primary={item.text} />
-            </ListItemButton>
-          ))}
+          {items.map((item, i) => {
+            const isSelected = i === 0;
+            const selectedColor = isSelected ? '#fff' : '#7B9FC3';
+            return (
+              <ListItemButton
+                key={item.text}
+                sx={{
+                  borderRadius: 0.8,
+                  mb: 1,
+                  bgcolor: isSelected ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
+                  color: selectedColor,
+                }}
+              >
+                <ListItemIcon sx={{ color: selectedColor }}>{item.icon}</ListItemIcon>
+                <ListItemText primary={item.text} />
+              </ListItemButton>
+            );
+          })}
         </List>
       </Box>
     </Drawer>

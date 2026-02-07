@@ -1,6 +1,6 @@
 import { ArcElement, Chart as ChartJS, Legend, Tooltip } from 'chart.js';
-import BoxContainer from '../BoxContainer';
-import DoughnutChart from '../DoughnutChart';
+import BoxContainer from '../shared/BoxContainer';
+import DoughnutChart from '../shared/DoughnutChart';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 

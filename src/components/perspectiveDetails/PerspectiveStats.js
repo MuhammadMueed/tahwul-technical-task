@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { perspectiveStatsData } from '../../data/mock-dashboard';
-import BoxContainer from '../BoxContainer';
+import BoxContainer from '../shared/BoxContainer';
 
 export default function PerspectiveStats() {
   return (

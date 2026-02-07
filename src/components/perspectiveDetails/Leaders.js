@@ -1,6 +1,6 @@
 import { Avatar, Box, ListItem, ListItemAvatar, ListItemText, Typography } from '@mui/material';
 import { leadersData } from '../../data/mock-dashboard';
-import BoxContainer from '../BoxContainer';
+import BoxContainer from '../shared/BoxContainer';
 
 export default function Leaders() {
   return (

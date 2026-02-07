@@ -1,5 +1,5 @@
 import { Box, CircularProgress, Typography } from '@mui/material';
-import BoxContainer from '../BoxContainer';
+import BoxContainer from '../shared/BoxContainer';
 
 export default function PerspectiveInfo() {
   return (

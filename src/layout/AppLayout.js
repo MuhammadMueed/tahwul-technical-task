@@ -9,7 +9,7 @@ function AppLayout() {
       <Sidebar />
       <Box display="flex" flexDirection={'column'} flex={1}>
         <Header />
-        <Box flex={1} p={3} bgcolor={'background.paper'}>
+        <Box flex={'1 1 0%'} p={3} bgcolor={'background.paper'}>
           <Outlet />
         </Box>
       </Box>

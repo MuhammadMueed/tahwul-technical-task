@@ -1,6 +1,6 @@
 import { Box, MenuItem, Select, Typography } from '@mui/material';
 import { timelineSteps } from '../../data/mock-dashboard';
-import BoxContainer from '../BoxContainer';
+import BoxContainer from '../shared/BoxContainer';
 
 export default function ProjectTimeline() {
   const completedCount = timelineSteps.filter((s) => s.status === 'completed').length;
@@ -13,7 +13,7 @@ export default function ProjectTimeline() {
           sx={{
             height: 14,
             borderRadius: 999,
-            bgcolor: '#F5F8FB',
+            bgcolor: 'background.paper',
           }}
         />
 
@@ -47,7 +47,7 @@ export default function ProjectTimeline() {
                   width: 10,
                   height: 10,
                   borderRadius: '50%',
-                  bgcolor: step.status === 'completed' ? '#fff' : 'error.main',
+                  bgcolor: step.status === 'completed' ? 'background.default' : 'error.main',
                 }}
               />
             </Box>
@@ -65,10 +65,10 @@ export default function ProjectTimeline() {
       >
         {timelineSteps.map((step, index) => (
           <Box key={index}>
-            <Typography color="text.secondary" mb={0.5}>
+            <Typography color="text.secondary" variant="body2" mb={0.5}>
               {step.date}
             </Typography>
-            <Typography fontWeight={500} color="text.primary">
+            <Typography fontWeight={500} variant="body2" color="text.primary">
               {step.title}
             </Typography>
           </Box>

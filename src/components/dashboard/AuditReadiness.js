@@ -1,6 +1,6 @@
 import { Box, Divider, Typography } from '@mui/material';
-import BoxContainer from '../BoxContainer';
-import DoughnutChart from '../DoughnutChart';
+import BoxContainer from '../shared/BoxContainer';
+import DoughnutChart from '../shared/DoughnutChart';
 
 export default function AuditReadiness() {
   return (

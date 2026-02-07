@@ -1,6 +1,6 @@
 import { Avatar, Box, Divider, List, ListItem, ListItemAvatar, ListItemIcon, ListItemText, Typography } from '@mui/material';
 import { performingleaders } from '../../data/mock-dashboard';
-import BoxContainer from '../BoxContainer';
+import BoxContainer from '../shared/BoxContainer';
 
 export default function TopPerformingLeaders() {
   return (

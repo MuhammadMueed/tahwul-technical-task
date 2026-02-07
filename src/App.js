@@ -16,7 +16,6 @@ function App() {
       </Routes>
     </Router>
   );
-  // return <AppLayout children={<Dashboard />}></AppLayout>;
 }
 
 export default App;

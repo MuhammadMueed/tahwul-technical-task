@@ -1,7 +1,7 @@
 import { SendOutlined } from '@mui/icons-material';
 import { Box, Button, TextareaAutosize, Typography } from '@mui/material';
 import { commentsData } from '../../data/mock-dashboard';
-import BoxContainer from '../BoxContainer';
+import BoxContainer from '../shared/BoxContainer';
 
 export default function EvidenceTabComments() {
   return (

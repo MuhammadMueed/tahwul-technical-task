@@ -10,7 +10,7 @@ import TableSortLabel from '@mui/material/TableSortLabel';
 import { visuallyHidden } from '@mui/utils';
 import * as React from 'react';
 import { theme } from '../../theme/theme';
-import BoxContainer from '../BoxContainer';
+import BoxContainer from '../shared/BoxContainer';
 
 function createData(id, documentNumber, documentName, documentLead, documentPreparer, date, dueDate, status) {
   return {

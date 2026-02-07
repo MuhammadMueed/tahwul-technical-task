@@ -1,6 +1,6 @@
 import { Box, Divider, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
 import { activitiesData } from '../../data/mock-dashboard';
-import BoxContainer from '../BoxContainer';
+import BoxContainer from '../shared/BoxContainer';
 
 export default function RecentActivities() {
   return (

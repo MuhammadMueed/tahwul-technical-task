@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { progressStatusData, STATUS_COLORS } from '../../data/mock-dashboard';
-import BoxContainer from '../BoxContainer';
+import BoxContainer from '../shared/BoxContainer';
 
 export default function ProgressStatus() {
   return (
@@ -14,7 +14,6 @@ export default function ProgressStatus() {
           sx={{
             display: 'flex',
             gap: 2,
-            overflowX: 'auto',
             pb: 1,
           }}
         >
@@ -59,7 +58,7 @@ function StatusDot({ item }) {
           height: 24,
           borderRadius: '50%',
           bgcolor: STATUS_COLORS[status],
-          color: '#fff',
+          color: 'background.default',
           fontSize: 14,
           fontWeight: 600,
           display: 'flex',
@@ -102,7 +101,7 @@ function SectionCard({ title, items, isExpand }) {
           flex: 1,
           display: 'grid',
           gridTemplateColumns: `repeat(${items.length > 3 ? 2 : items.length}, 1fr)`,
-          gap: 0.7,
+          gap: 0.6,
         }}
       >
         {items.map((item) => (
@@ -122,7 +121,7 @@ function CategoriesColumn({ data }) {
         justifyContent={'center'}
         sx={{
           bgcolor: 'primary.main',
-          color: '#fff',
+          color: 'background.default',
           borderRadius: 0.63,
           p: 1,
           height: 90,
@@ -131,7 +130,7 @@ function CategoriesColumn({ data }) {
           textAlign: 'center',
         }}
       >
-        <Typography fontWeight={700} fontSize={12}>
+        <Typography fontWeight={700} fontSize={12} color="background.default">
           {data.title}
         </Typography>
         <Box
@@ -140,17 +139,16 @@ function CategoriesColumn({ data }) {
             bgcolor: 'rgba(255,255,255,0.15)',
             borderRadius: 1,
             py: 0.2,
-            fontWeight: 600,
             height: 22,
           }}
         >
-          <Typography variant="body2" fontWeight={700}>
+          <Typography variant="body2" fontWeight={700} color="background.default">
             {data.percentage}
           </Typography>
         </Box>
       </Box>
       <Box
-        height={360}
+        height={365}
         sx={{
           display: 'flex',
           flexDirection: 'column',
