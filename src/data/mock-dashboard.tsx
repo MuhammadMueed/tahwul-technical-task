@@ -1,6 +1,5 @@
 import {
   Autorenew,
-  CheckCircle,
   CheckCircleOutlineOutlined,
   CloudUploadOutlined,
   DescriptionOutlined,
@@ -8,7 +7,7 @@ import {
   HourglassEmpty,
   InsertChartOutlined,
   ListAlt,
-  TaskAltOutlined,
+  TaskAltOutlined
 } from '@mui/icons-material';
 
 export const timelineSteps = [
@@ -427,7 +426,7 @@ export const perspectiveStatsData = [
     id: 4,
     count: 1,
     title: 'Completed Evidence',
-    icon: <CheckCircle sx={{ fontSize: '24px' }} />,
+    icon: <CheckCircleOutlineOutlined sx={{ fontSize: '24px' }} />,
   },
 ];
 
@@ -441,5 +440,18 @@ export const leadersData = [
     id: 2,
     name: 'Ahmed AI-Ali',
     perspective: 'Strategy Perspective',
+  },
+];
+
+export const commentsData = [
+  {
+    name: 'Ahmed AI-Ali',
+    comment: 'This criterion is well-documented and meets all the requirements. Great work!',
+    date: '2025-05-01',
+  },
+  {
+    name: 'Sarah AI-Khaled',
+    comment: 'I have some concerns about the evidence provided for this criterion. Can we discuss further?',
+    date: '2025-05-02',
   },
 ];

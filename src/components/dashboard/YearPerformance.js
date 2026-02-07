@@ -1,16 +1,12 @@
-import { useTheme } from '@emotion/react';
 import BoxContainer from '../BoxContainer';
 
-import { useMediaQuery } from '@mui/material';
+import { alpha } from '@mui/material';
 import { BarElement, CategoryScale, Chart as ChartJS, Legend, LinearScale, Title, Tooltip } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 export default function YearPerformance() {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-
   const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
   const values = [88, 76, 80, 43, 89, 78, 55, 87, 79, 56, 88, 78];
 
@@ -60,32 +56,31 @@ export default function YearPerformance() {
     scales: {
       x: {
         grid: {
-          display: true,
-          color: 'rgba(0, 0, 0, 0.05)',
-          drawBorder: false,
+          display: false,
         },
         ticks: {
-          color: '#666666',
+          color: '#8597A8',
           font: {
-            size: isMobile ? 10 : 12,
-            family: 'Roboto, sans-serif',
+            size: 12,
+            family: 'IBM Plex Sans Arabic, sans-serif',
           },
         },
       },
       y: {
-        beginAtZero: false,
-        min: 30,
+        beginAtZero: true,
+
         max: 100,
         grid: {
-          color: 'rgba(0, 0, 0, 0.05)',
+          color: alpha('#8597A8', 0.1),
           drawBorder: false,
         },
         ticks: {
           color: '#666666',
           font: {
-            size: isMobile ? 10 : 12,
-            family: 'Roboto, sans-serif',
+            size: 12,
+            family: 'IBM Plex Sans Arabic, sans-serif',
           },
+          stepSize: 20,
           callback: (value) => `${value}`,
         },
       },
