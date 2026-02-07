@@ -1,5 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
+import ScrollToTop from './components/shared/ScrollToTop';
 import AppLayout from './layout/AppLayout';
 import Dashboard from './pages/Dashboard';
 import PerspectiveDetails from './pages/PerspectiveDetails';
@@ -7,6 +8,7 @@ import PerspectiveDetails from './pages/PerspectiveDetails';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<AppLayout />}>
           <Route index element={<Dashboard />} />
