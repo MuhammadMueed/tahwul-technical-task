@@ -7,7 +7,7 @@ import {
   HourglassEmpty,
   InsertChartOutlined,
   ListAlt,
-  TaskAltOutlined
+  TaskAltOutlined,
 } from '@mui/icons-material';
 
 export const timelineSteps = [
@@ -206,7 +206,6 @@ export const progressStatusData = [
           { id: 2, status: 'completed' },
           { id: 3, status: 'completed' },
           { id: 4, status: 'completed' },
-          { id: 5, status: 'completed' },
         ],
       },
       {
@@ -218,7 +217,6 @@ export const progressStatusData = [
           { id: 4, status: 'completed' },
           { id: 5, status: 'fullyUploaded' },
           { id: 6, status: 'completed' },
-          { id: 7, status: 'completed' },
         ],
       },
       {
