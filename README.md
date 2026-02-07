@@ -42,7 +42,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Workflow
 
 The landing page is Dashboard Screen.
+
 To view perspective details, click any perspective like Digital Transformation, Digital Culture and Environment etc.
+
 In details screen, you can navigate back to Dashboard or you view more details under Overview and Evidence tabs.
 
 ## How the Code Was Built
